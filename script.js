@@ -17,7 +17,7 @@ function submit_input() {
 // Decryption
 function submit_output() {
     var input = document.getElementById("encrypted").value
-    decrypt(input, 2)
+    decrypt(input, document.getElementById("shift").value)
 }
 
 function encrypt(string, n) {
@@ -80,6 +80,7 @@ function encrypt(string, n) {
             var replace_number = updated_numbers[allowed_numbers.indexOf(new_string[i])]
             new_string = new_string.replaceAt(i, replace_number.toString())
         }
+
     }
 
     //Update Output
