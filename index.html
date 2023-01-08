@@ -30,7 +30,13 @@
       <!-- Title -->
       <h1 class="title">nouhi<span class="title-split">dev</span></h1>
       <h2 class="sub-title">ENCRYPTION / DECRYPTION </h2>
-      <h3 class="sub-sub-title">DECRYPTED</h3>
+      <h3 class="sub-sub-title">SHIFT</h3>  
+        <div class="forms">
+            <form>
+                <input class="shift-forms" type="number" id="shift" value="1">
+            </form>
+        </div>
+        <h3 class="sub-sub-title">DECRYPTED</h3>
         <div class="forms">
             <form> 
                 <input type="text" id="unencrypted">
@@ -39,7 +45,11 @@
       <h3 class="sub-sub-title">ENCRYPTED</h3>
         <div class="forms">
             <form>
-                <input type="text" id="unencrypted">
+                <input type="text" id="encrypted">
+            </form>
+            <form onsubmit="return false">
+                <input class="btn" type="submit" onclick="submit_input()" value="ENCRYPT">
+                <input class="btn" type="submit" onclick="submit_output()" value="DECRYPT">
             </form>
         </div>
 

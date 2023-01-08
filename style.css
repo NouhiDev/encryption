@@ -134,12 +134,13 @@
   
   /* Loader */
   .content {
-        margin: 0;
+    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    display: none;
   }
 
   .loader {
@@ -193,3 +194,23 @@
     .forms {
         text-align: center;  
     }
+
+    .btn {
+        max-width: 200px;
+        font-size: 16px;
+        background-color: #676d7a;
+    }
+
+    .btn:hover {
+        background-color: #4c515a;
+        cursor: pointer;
+    }
+
+    .shift-forms {
+        max-width: 100px;
+    }
+
+    input[type=number]::-webkit-inner-spin-button {
+        opacity: 1
+    }
+    
